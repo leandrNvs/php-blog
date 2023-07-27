@@ -1,0 +1,42 @@
+.posts {
+  margin: 3rem 0;
+
+  &:nth-child(even) {
+    border-left: 5px solid skyblue;
+  }
+
+  &:nth-child(odd) {
+    border-right: 5px solid skyblue;
+  }
+
+  padding: 1rem 2rem;
+
+  &__header {
+    &__group {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      padding: 1rem 0;
+
+      color: #888;
+    }
+  }
+
+  &__title {
+    font-size: 1.7rem;
+
+    a:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &__text {
+    text-align: justify;
+    line-height: 1.5;
+  }
+
+  &__author {
+    text-transform: capitalize;
+  }
+}

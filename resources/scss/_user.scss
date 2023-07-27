@@ -1,0 +1,157 @@
+.user {
+  padding: 1rem;
+  padding-top: 100px;
+  margin: 0 auto;
+
+  max-width: 900px;
+
+  display: grid;
+  gap: 1.5rem;
+
+  &__header {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+
+    padding: 2rem;
+
+    &__actions {
+      position: absolute;
+      top: 0;
+      right: 0;
+
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+  }
+
+  &__infos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+
+    position: relative;
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+    flex: 1;
+  }
+
+  &__name {
+    font-size: 1.5rem;
+    font-weight: 600;
+    border-bottom: 1px solid #000;
+    text-transform: capitalize;
+  }
+
+  &__email {
+    color: #888;
+  }
+
+  &__profile {
+    img {
+      height: 100px;
+      width: 100px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+  }
+
+  &__bio {
+    line-height: 1.5;
+    font-size: 0.925rem;
+    color: #444;
+    margin-top: 1rem;
+  }
+
+  .delete {
+    color: red;
+    text-transform: capitalize;
+  }
+
+  &-post {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    padding: 2rem;
+
+    h3 {
+      border-bottom: 1px solid #ccc;
+
+      margin-bottom: 1rem;
+      padding-bottom: 0.5rem;
+
+      font-size: 2rem;
+    }
+
+    &__list {
+      list-style: none;
+
+      li {
+        display: flex;
+        align-items: center;
+        padding: 1rem 0;
+
+        a {
+          font-weight: 600;
+          font-size: 1.5rem;
+          flex: 1;
+          color: #222;
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+
+      &__actions {
+        display: flex;
+        gap: 1rem;
+      }
+    }
+  }
+
+  &-favorites {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    padding: 2rem;
+
+    h3 {
+      border-bottom: 1px solid #ccc;
+
+      margin-bottom: 1rem;
+      padding-bottom: 0.5rem;
+
+      font-size: 2rem;
+    }
+
+    &__list {
+      list-style: none;
+
+      li {
+        display: flex;
+        align-items: center;
+        padding: 1rem 0;
+
+        a {
+          font-weight: 600;
+          font-size: 1.5rem;
+          flex: 1;
+          color: #222;
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+
+  &__update-account {
+    padding: 6rem 0 2rem;
+  }  
+
+  .post__form {
+    margin: 0 !important;
+  }
+}

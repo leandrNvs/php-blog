@@ -1,0 +1,33 @@
+<form action="user" method="POST" class="form" autocomplete="off">
+  <div class="form-control">
+    <label for="name">Name</label>
+    <input type="text" name="name" id="name" value="{{name}}">
+    <p class="error-message">{{err-name}}</p>
+  </div>
+
+  <div class="form-control">
+    <label for="name">Email</label>
+    <input type="email" name="email" id="email" value="{{email}}">
+    <p class="error-message">{{err-email}}</p>
+  </div>
+
+  <div class="form-control">
+    <label for="name">Password</label>
+    <input type="password" name="password" id="password" value="{{pass}}">
+    <p class="error-message">{{err-pass}}</p>
+  </div>
+
+  <div class="form-control">
+    <label for="name">Confirm Password</label>
+    <input type="password" name="cpassword" id="cpassword" value="{{cpass}}">
+    <p class="error-message">{{err-cpass}}</p>
+  </div>
+
+  <p class="form-text">
+    Already have an account? <a href="sign-in">Sign in</a>
+  </p>
+
+  <button type="submit">
+    Create account
+  </button>
+</form>

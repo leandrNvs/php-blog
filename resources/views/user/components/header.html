@@ -1,0 +1,20 @@
+<header class="user__header">
+  <div class="user__infos">
+    <div class="user__profile">
+      <img src="resources/images/users/{{user-profile}}" alt="{{user-name}}">
+    </div>
+    <div class="user__info">
+      <span class="user__name">{{user-name}}</span>
+      <span class="user__email">{{user-email}}</span>
+    </div>
+    <div class="user__header__actions">
+      <a href="account/update/{{user-id}}" aria-label="upate">
+        <img src="resources/images/icons/pencil.svg" alt="">
+      </a>
+      <a href="account/delete/{{user-id}}" class="delete">Delete account</a>
+    </div>
+  </div>
+  <p class="user__bio">
+    {{user-bio}}
+  </p>
+</header>

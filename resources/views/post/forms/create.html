@@ -1,0 +1,18 @@
+<form action="post" method="POST" class="form">
+
+  <input type="hidden" name="iduser" value="{{authorId}}">
+
+  <div class="form-control">
+    <label for="name">Title</label>
+    <input type="text" name="title" id="title" value="{{title}}">
+    <p class="error-message">{{err-title}}</p>
+  </div>
+
+  <div class="form-control">
+    <label for="text">Text</label>
+    <textarea name="text" id="text" rows="15">{{text}}</textarea>
+    <p class="error-message">{{err-text}}</p>
+  </div>
+
+  <button type="submit">Create Post</button>
+</form>

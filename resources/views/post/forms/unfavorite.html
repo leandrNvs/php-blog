@@ -1,0 +1,8 @@
+<form action="user/unfavorite" method="POST" class="post__form">
+  @("delete")
+  <input type="hidden" name="idpost" value="{{postId}}">
+  <input type="hidden" name="iduser" value="{{userId}}">
+  <button type="submit">
+    <img src="resources/images/icons/bookmark-fill.svg" alt="">
+  </button>
+</form>

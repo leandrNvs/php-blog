@@ -1,0 +1,19 @@
+<section class="home">
+  <section class="home__posts">
+    <h2 class="home__title">Latest Posts</h2>
+    {{posts}}
+
+    <div class="home__paginate">
+      {{paginate}}
+    </div>
+  </section>
+
+  <div class="home__user">
+    <img src="resources/images/users/{{profile}}" alt="" class="profile">
+    <div class="home__user__header">
+      <div class="home__user__decoration"></div>
+      <h3 class="home__user__title">About me</h3>
+    </div>
+    <p class="home__user__bio">{{bio}}</p>
+  </div>
+</section>

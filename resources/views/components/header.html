@@ -1,0 +1,26 @@
+<header class="header">
+  <a href="" class="header__logo">BLOG</a>
+
+  <nav class="navbar">
+    <button aria-label="close menu">
+      <img src="resources/images/icons/x.svg" alt="">
+    </button>
+
+    <a href="" class="navbar__link">Home</a>
+    <a href="about" class="navbar__link">About</a>
+    <a href="write" class="navbar__link">Write</a>
+    <div class="divider"></div>
+    <div class="navbar__group--{{userIsNotLogged}}">
+      <a href="register" class="navbar__link">Register</a>
+      <a href="sign-in" class="navbar__link">Sign in</a>
+    </div>
+    <div class="navbar__group--{{userIsLogged}}">
+      <a href="account" class="navbar__link">Account</a>
+      <a href="logout" class="navbar__link">Logout</a>
+    </div>
+  </nav>
+
+  <button aria-label="open menu">
+    <img src="resources/images/icons/menu.svg" alt="">
+  </button>
+</header>

@@ -1,0 +1,32 @@
+.post {
+  min-height: 100vh;
+  padding: 8rem 1.3rem 2rem;
+
+  &__title {
+    font-size: 1.7rem;
+    text-align: center;
+    margin-bottom: 1em;
+    text-transform: uppercase;
+  }
+
+  &__form {
+    display: flex;
+    justify-content: center;
+
+    button {
+      img {
+        width: 2rem;
+      }
+    }
+
+    margin-bottom: 2rem;
+  }
+
+  &__text {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    text-align: justify;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+}

@@ -1,0 +1,30 @@
+.toast {
+  background-color: #fff;
+
+  box-shadow: 0 0px 10px rgba(0, 0, 0, .5);
+
+  padding: 1rem;
+
+  border-left: 10px solid transparent;
+  
+  font-size: 1.1rem;
+
+  position: fixed;
+  bottom: 1rem;
+  left: 1rem;
+  right: 1rem;
+
+  &--success {
+    border-left-color: #198754;
+    color: #198754;
+  }
+
+  &--error {
+    border-left-color: red;
+    color: red;
+  }
+
+  &--none {
+    display: none;
+  }
+}

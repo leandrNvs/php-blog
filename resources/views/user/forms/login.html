@@ -1,0 +1,21 @@
+<form action="auth/login" method="POST" class="form" autocomplete="off">
+  <div class="form-control">
+    <label for="name">Email</label>
+    <input type="email" name="email" id="email" value="{{email}}">
+    <p class="error-message">{{err-email}}</p>
+  </div>
+
+  <div class="form-control">
+    <label for="name">Password</label>
+    <input type="password" name="password" id="password">
+    <p class="error-message">{{err-pass}}</p>
+  </div>
+
+  <p class="form-text">
+    You don't have an account? <a href="register">Click here to create one</a>
+  </p>
+
+  <button type="submit">
+    Sign in
+  </button>
+</form>

@@ -1,0 +1,46 @@
+<form action="user" method="POST" class="form" autocomplete="off" enctype="multipart/form-data">
+  @("put")
+
+  <input type="hidden" name="iduser" value="{{userId}}">
+
+  <div class="form-files">
+    <label for="profile" aria-label="change profile picture">
+      <img src="resources/images/icons/camera.svg" alt="">
+    </label>
+    <input type="file" name="profile" id="profile">
+  </div>
+
+  <div class="form-control">
+    <label for="name">Name</label>
+    <input type="text" name="name" id="name" value="{{name}}" placeholder="{{name-placeholder}}">
+    <p class="error-message">{{err-name}}</p>
+  </div>
+
+  <div class="form-control">
+    <label for="name">Email</label>
+    <input type="email" name="email" id="email" value="{{email}}" placeholder="{{email-placeholder}}">
+    <p class="error-message">{{err-email}}</p>
+  </div>
+
+  <div class="form-control">
+    <label for="name">Password</label>
+    <input type="password" name="password" id="password" value="{{pass}}" placeholder="{{pass-placeholder}}">
+    <p class="error-message">{{err-pass}}</p>
+  </div>
+
+  <div class="form-control">
+    <label for="name">Confirm Password</label>
+    <input type="password" name="cpassword" id="cpassword">
+    <p class="error-message">{{err-cpass}}</p>
+  </div>
+
+  <div class="form-control">
+    <label for="name">Bio</label>
+    <textarea name="bio" value="{{bio}}" rows="10" placeholder="{{bio-placeholder}}"></textarea>
+    <p class="error-message">{{err-bio}}</p>
+  </div>
+
+  <button type="submit">
+    Save changes
+  </button>
+</form>
